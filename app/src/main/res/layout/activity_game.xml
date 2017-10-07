@@ -17,28 +17,31 @@
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:layout_gravity="center"
-            android:src="@drawable/ball"/>
+            android:src="@drawable/ball"
+            android:contentDescription="@string/magic_ball_8"/>
         <ImageView
             android:layout_width="195dp"
             android:layout_height="195dp"
             android:layout_gravity="center"
-            android:src="@mipmap/circle_magic"/>
+            android:src="@mipmap/circle_magic"
+            android:contentDescription="@string/magic_ball_8"/>
        <ImageView
             android:layout_marginTop="18dp"
             android:layout_width="160dp"
             android:layout_height="165dp"
             android:layout_gravity="center"
-            android:src="@mipmap/triangule"/>
+            android:src="@mipmap/triangule"
+           android:contentDescription="@string/magic_ball_8"/>
         <TextView
             android:id="@+id/text_game"
             android:layout_width="50dp"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="#ffffff"
-            android:text="SHAKE ME"
-            android:layout_marginBottom="10dp"/>
+            android:text="@string/shake"
+            android:layout_marginBottom="05dp"/>
 
     </FrameLayout>
 

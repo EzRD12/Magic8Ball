@@ -12,7 +12,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,16 +66,15 @@ public class GameActivity extends AppCompatActivity {
             if(shake > 12){
                 trans.reset();
                 frameLayout.startAnimation(trans);
-                int i = (int) (Math.random()*2+1);
+                int i = (int) (Math.random()*5);
                 text.setText(phrases.get(i));
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        text.setText("SHAKE ME");
+                        text.setText(R.string.shake);
                     }
-                },2000);
+                },3000);
             }
-
 
         }
 

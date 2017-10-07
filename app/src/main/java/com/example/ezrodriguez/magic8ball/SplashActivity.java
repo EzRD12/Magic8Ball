@@ -1,19 +1,16 @@
 package com.example.ezrodriguez.magic8ball;
 
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
 
     private ImageView logo;
-    private final int DURACION_SPLASH = 3000;
+    private final int DURATION_SPLASH = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +20,12 @@ public class SplashActivity extends AppCompatActivity {
         logo = (ImageView) findViewById(R.id.logo_magicBall);
 
         final AlphaAnimation fadeIn = new AlphaAnimation(0.0f,1.0f);
-        fadeIn.setDuration(DURACION_SPLASH);
+        fadeIn.setDuration(DURATION_SPLASH);
         fadeIn.setStartOffset(2000);
         fadeIn.setFillAfter(true);
 
         final AlphaAnimation fadeOut = new AlphaAnimation(1.0f,0.0f);
-        fadeOut.setDuration(DURACION_SPLASH);
+        fadeOut.setDuration(DURATION_SPLASH);
         fadeOut.setStartOffset(2000);
         fadeOut.setFillAfter(true);
 
