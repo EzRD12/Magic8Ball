@@ -22,11 +22,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(MainActivity.this,GameActivity.class);
         startActivity(intent);
     }
-    @Override
-    public void onBackPressed (){
-        if (i>1) {
-            Toast.makeText(this,"Prueba",Toast.LENGTH_SHORT).show();
-        }
-    }
 
 }
